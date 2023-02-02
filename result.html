@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        table, td, th {
+            border-style: solid;
+            text-align: center;
+            border-color: brown;
+            font-size: larger;
+        }
+        input {
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body >
+    <table >
+        <tr>
+            <th width='40%'>Subject</th><th width='30%'>Max. Marks</th><th width='30%'>Marks Obt</th>
+        </tr>
+        <tr><td>Language</td><td>100</td><td><input type="number" value="0" onblur="calc()" id="lang"/></td></tr>
+        <tr><td>Maths</td><td>100</td><td><input type="number" value="0" onblur="calc()" id="maths"/></td></tr>
+        <tr><td>Reasoning</td><td>50</td><td><input type="number" value="0" onblur="calc()" id="res"/></td></tr>
+        <tr><td>Total</td><td>250</td><td id="tot"></td></tr>
+        <tr><td>Percentage:<span id="per"></span></td>
+        <td>Result: <span id="result"></span></td>
+        <td>Grade: <span id="gr"></span></td></tr>
+    </table>
+    <script>
+        function $(id) { return document.getElementById(id);}
+        function calc(){
+            m1 = parseInt($('lang').value);
+            m2 = parseInt($('maths').value);
+            m3 = parseInt($('res').value);
+            tot = m1+m2+m3;
+            per = tot/2.5;
+            $('tot').innerText = tot;
+            $('per').innerText=per;
+            if(m1<40 || m2<40 || m3<20){
+                $('result').innerText="Fail";
+                $('gr').innerText = "--"
+            } else {
+                $('result').innerText="Pass";
+                if(per<50){
+                    gr="C";
+                } else if(per<60){
+                    gr = "B";
+                } else if(per<75){
+                    gr="A";
+                } else {
+                    gr = "A+"
+                }
+                $('gr').innerText=gr;
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>

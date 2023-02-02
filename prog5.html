@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        Member Name : <input type="text" id="mname" name="mname"/><br>
+        Member Age : <input type="number" id="age" name = "age"/><br>
+        Member DOB : <input type="date" id="bdate"/><br>
+        <input type="button" onclick="fn1()" value="Submit" />
+    </form>
+</body>
+<script>
+        function $(id) { return document.getElementById(id);}
+        function fn1(){
+            mname1 = $('mname').value;
+            age1 = $('age').value;
+            bdate = $('bdate').value;
+            obj = {'mname':mname1, 'age':age1,'bdate':bdate};
+//            console.log(obj);return;
+            fetch('prog5.php',{
+                    method: 'POST', // or 'PUT'
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(obj),
+                }).then((response) => response.text())
+                .then((text) => {
+                  alert(text);
+                })
+
+
+}
+</script>
+</html>

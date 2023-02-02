@@ -1,0 +1,125 @@
+.grid{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.application-form{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.582),rgba(255, 255, 255, 0.466)),url(https://img.freepik.com/premium-photo/flying-passengers-aircraft-fly-climb-background-blue-sky-cirrus-clouds_165577-2298.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:2px solid black;
+    padding: 20px;
+    border-radius: 25px;
+}
+h1{
+    text-align: center;
+}
+label{
+    font-size:1.5rem;
+}
+#title{
+    font-size: 1rem;
+    height: 35px;
+    width: 15%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#name{
+    font-size: 1rem;
+    height: 30px;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#aaddress{
+    font-size: 1rem;
+    height: 30px;
+    width: 95%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#baddress{
+    font-size: 1rem;
+    height: 30px;
+    width: 95%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#city{
+    font-size: 1rem;
+    height: 30px;
+    width: 47%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#region{
+    font-size: 1rem;
+    height: 30px;
+    width: 46%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#pin{
+    font-size: 1rem;
+    height: 30px;
+    width: 47%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#country{
+    font-size: 1rem;
+    height: 35px;
+    width: 47%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#mail{
+    font-size: 1rem;
+    height: 30px;
+    width: 95%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#date{
+    font-size: 1.5rem;
+    height: 30px;
+    width: 95%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#mob{
+    font-size: 1rem;
+    height: 30px;
+    width: 47%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#age{
+    font-size: 1rem;
+    height: 30px;
+    width: 46%;
+    margin-bottom: 15px;
+    background-color: rgba(240, 248, 255, 0.103);
+    border: 2px solid black;
+}
+#submit{
+    font-size: 1rem;
+    height: 35px;
+    width: 95%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: lime;
+}
+#submit:hover{
+    background-color: rgb(180, 180, 180);
+    box-shadow: 5px 0px 15px 15px lime;
+}
